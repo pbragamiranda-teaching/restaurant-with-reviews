@@ -1,0 +1,5 @@
+<%= simple_form_for [@restaurant, @review] do |f| %>
+  <%= f.input :content %>
+  <%= f.submit 'Submit Review', class: "btn btn-info"  %>
+<% end %>
+

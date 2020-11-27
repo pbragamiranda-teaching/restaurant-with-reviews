@@ -1,0 +1,9 @@
+<h1>5 stars only!</h1>
+
+
+<% @restaurants.each do |restaurant| %>
+  <p>
+    <%= restaurant.name %> - <%= restaurant.rating %> stars
+  </p>
+
+<% end %>

@@ -15,5 +15,14 @@
   <%= @restaurant.rating %>
 </p>
 
+<% @restaurant.reviews.each do |review| %>
+  <p>
+    <%= review.content %>
+    <%= link_to 'Delete', review_path(review), method: :delete, data: { confirm: 'Sure?'} %>
+    <hr>
+  </p>
+<% end %>
+
 <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
 <%= link_to 'Back', restaurants_path %>
+<%= link_to 'Review', new_restaurant_review_path(@restaurant) %>

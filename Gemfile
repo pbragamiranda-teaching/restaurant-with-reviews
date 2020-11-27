@@ -24,6 +24,7 @@ gem 'turbolinks', '~> 5'
 
 #to create forms
 gem 'simple_form'
+gem 'faker'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
